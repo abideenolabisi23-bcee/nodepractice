@@ -37,3 +37,7 @@ module.exports=async(req, res)=>{
 
     return app(req, res)
 }
+
+app.get("/", (req, res) => {
+  res.send("Welcome to the API");
+})
